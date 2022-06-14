@@ -785,4 +785,31 @@ ol {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.recall-label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--secondary-color-text);
+}
+
+.recall-input-box {
+  position: relative;
+}
+
+.recall-input {
+  display: block;
+  height: 40px;
+  width: 100%;
+  padding: 11px 12px;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.recall-icon  {
+  position: absolute;
+  top: 0;
 }
