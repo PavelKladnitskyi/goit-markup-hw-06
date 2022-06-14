@@ -446,16 +446,34 @@
             </li>
           </ul>
         </div>
+
+        <form class="email-input-form">
+          <p class="email-input-title">Подпишитесь на рассылку</p>
+          <input type="email" name="email" class="email-input" placeholder="Email" />
+          <button type="submit" class="email-input-button">
+            Подписаться
+            <svg class="email-send-svg" width="24" height="24">
+              <use href="./images/icons.svg#send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-svg" width="18" height="18">
             <use href="./images/icons.svg#close"></use>
           </svg>
-          <!-- <img src="./images/close.svg" alt="Закрыть" width="18" height="18" class="modal-close-img"> -->
         </button>
+
+        <form class="recall-form">
+          <p class="recall-form-title">Оставьте свои данные, мы вам перезвоним</p>
+
+          <label for="">Имя</label>
+          <input type="text" name="username">
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
