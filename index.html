@@ -468,16 +468,55 @@
           </svg>
         </button>
 
-        <form class="recall-form">
-          <p class="recall-form-title">Оставьте свои данные, мы вам перезвоним</p>
-
-          <label for="username" class="recall-label">Имя</label>
-          <div class="recall-input-box">
-            <input type="text" name="username" class="recall-input" id="username" />
-            <svg class="recall-icon-svg" width="18" height="18">
-              <use href="./images/icons.svg#person"></use>
-            </svg>
+        <form class="modal-form">
+          <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="form-field">
+            <label for="username" class="modal-label">Имя</label>
+            <div class="modal-input-wrap">
+              <input
+                type="text"
+                name="username"
+                class="modal-input"
+                id="username"
+                autocomplete="off"
+              />
+              <svg class="modal-icon-svg" width="18" height="18">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
           </div>
+
+          <div class="form-field">
+            <label for="phone" class="modal-label">Телефон</label>
+            <div class="modal-input-wrap">
+              <input type="tel" name="phone" class="modal-input" id="phone" autocomplete="off" />
+              <svg class="modal-icon-svg" width="18" height="18">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="email" class="modal-label">Почта</label>
+            <div class="modal-input-wrap">
+              <input type="email" name="email" class="modal-input" id="email" autocomplete="off" />
+              <svg class="modal-icon-svg" width="18" height="18">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="textarea" class="modal-label">Комментарий</label>
+            <textarea name="textarea" class="modal-textarea" id="textarea" rows="8" placeholder="Введите текст"></textarea>
+          </div>
+
+           <div class="form-field">
+              <input type="checkbox" name="privacy" value="true" class="modal-check" />
+              <label for="privacy" class="modal-check-text">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+          </div>
+
+          <button class="modal-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
