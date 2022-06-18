@@ -449,7 +449,7 @@
 
         <form class="email-input-form">
           <p class="email-input-title">Подпишитесь на рассылку</p>
-          <input type="email" name="email" class="email-input" placeholder="Email" />
+          <input type="email" name="email" class="email-input" placeholder="Email" required />
           <button type="submit" class="email-input-button">
             Подписаться
             <svg class="email-send-svg" width="24" height="24">
@@ -459,8 +459,8 @@
         </form>
       </div>
     </footer>
-
-    <div class="backdrop is-hidden" data-modal data-modal-close>
+    <!--MODAL-->
+    <div class="backdrop is is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-svg" width="18" height="18">
@@ -516,7 +516,7 @@
 
           <div class="form-privacy">
             <label for="privacy" class="modal-check-text">
-              <input type="checkbox" name="privacy" id="privacy" value="true" class="modal-check" />
+              <input type="checkbox" name="privacy" id="privacy" value="true" class="modal-check" required />
               <span class="check-icon"></span>
               Соглашаюсь с рассылкой и принимаю          
             </label>
